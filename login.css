@@ -1,0 +1,162 @@
+*, ::after,::before {
+    margin: 0;
+    padding: 0;
+
+}
+footer{
+    margin-bottom: 0;
+}
+body{
+    width: 100%;
+    font-family: Roboto, Arial;
+    color: grey;
+}
+.black{
+    color: black;
+}
+p, section {
+    margin: 1.3em 0;
+}
+h1{
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0;
+}
+ul, li ,a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    background-color: antiquewhite;
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    height: 40%;
+    position: relative;
+}
+.input{
+    width: 100%;
+    height: 2em;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    margin-top: -0.05em;
+    color: whitesmoke;
+}
+
+.nav-container{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about li {
+    margin-left: 1em;
+}
+.main-body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-body article{
+    width: 47%;
+   
+}
+.main{ width: 60%;
+    margin: auto;
+}
+.aside img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+/* .aside{
+    background-image: url(img/1_RFFSJobXkAnt6_AdfOIuMg.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+h3{
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+h3:before, h3:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid grey;
+    margin: auto;
+}
+.login-option {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+.alt{
+    text-align: center;
+}
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 800px) {
+    nav{ display: none;
+    }
+    .black{
+        color: whitesmoke;
+    }
+    .container{width: 100%;
+        height:100%;
+        margin-top: 5em;
+        color: whitesmoke;
+    }
+    .main-body{
+        width: 100%;
+        display: block;
+        margin: auto;
+        background-image: url(img/1_RFFSJobXkAnt6_AdfOIuMg.webp);
+        background-position: center;
+        background-size: cover;
+        object-fit: contain;
+       
+
+    }
+    
+    .main-body article{
+        width: 100%;
+        margin-top: 0;
+       
+    }
+    .main{
+        width: 9%;
+        margin: auto;
+        opacity: 1;
+    }
+    .aside{
+        display: none;
+    }
+}
+button{
+    height: 2em;
+    padding: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+      background-image: linear-gradient(to right, rgb(25, 26, 52) , rgb(146, 169, 98));
+}
